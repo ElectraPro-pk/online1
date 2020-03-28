@@ -29,6 +29,7 @@ io.on('connection', function(socket){
 });
 
 app.get("/user",(req,res)=>{
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).send(users);
   });
 const PORT = process.env.PORT || 8000;
