@@ -31,5 +31,5 @@ io.on('connection', function(socket){
 app.get("/user",(req,res)=>{
     res.status(200).send(users);
   });
-PORT = const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 server.listen(PORT);
